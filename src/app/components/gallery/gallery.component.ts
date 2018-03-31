@@ -24,7 +24,7 @@ export class GalleryComponent implements OnInit {
      this.node.setAttribute('width', '20%');
      this.node.setAttribute('class', 'col-md-3 col-12');
      this.node.setAttribute('style', 'margin-bottom:2%;');
-     document.getElementById('gallery').appendChild(this.node);
+      document.getElementById('gallery').appendChild(this.node);
      console.log(this.node);
      this.img++;
     }
