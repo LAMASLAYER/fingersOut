@@ -10,6 +10,10 @@ import { SafePipe } from './pipes/safe.pipe';
 import { AdminComponent } from './components/admin/admin.component';
 import { FormsModule } from '@angular/forms';
 import {MusicsService} from './services/musics.service';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { AboutComponent } from './components/about/about.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { MoreComponent } from './components/more/more.component';
 
 
 
@@ -26,6 +30,18 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'gallery',
+    component: GalleryComponent
+  },
+  {
+    path: 'about',
+    component: AboutComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   }
 ];
 
@@ -37,6 +53,10 @@ const appRoutes: Routes = [
     FilterPipe,
     SafePipe,
     AdminComponent,
+    GalleryComponent,
+    AboutComponent,
+    ContactComponent,
+    MoreComponent,
   ],
   imports: [
     BrowserModule,
