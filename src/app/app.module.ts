@@ -12,9 +12,9 @@ import { FormsModule } from '@angular/forms';
 import {MusicsService} from './services/musics.service';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
-import { ContactComponent } from './components/contact/contact.component';
 import { MoreComponent } from './components/more/more.component';
 import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 
@@ -40,10 +40,6 @@ const appRoutes: Routes = [
   {
     path: 'about',
     component: AboutComponent
-  },
-  {
-    path: 'contact',
-    component: ContactComponent
   }
 ];
 
@@ -57,8 +53,8 @@ const appRoutes: Routes = [
     AdminComponent,
     GalleryComponent,
     AboutComponent,
-    ContactComponent,
     MoreComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
