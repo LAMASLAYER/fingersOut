@@ -14,6 +14,8 @@ import { GalleryComponent } from './components/gallery/gallery.component';
 import { AboutComponent } from './components/about/about.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { MoreComponent } from './components/more/more.component';
+import { LocationStrategy, HashLocationStrategy } from '@angular/common';
+
 
 
 
@@ -65,7 +67,8 @@ const appRoutes: Routes = [
     FormsModule
   ],
   providers: [
-    MusicsService
+    MusicsService,
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
   ],
   bootstrap: [AppComponent]
 })
